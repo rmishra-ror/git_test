@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Demo {
 
+    public static multiply(int num1, int num2){
+        return num1 * num2;
+    }
+
     public static void main(String[] args) {
 
         /* This reads the input provided by user
@@ -20,7 +24,7 @@ public class Demo {
         scan.close();
 
         // Calculating product of two numbers
-        int product = num1*num2;
+        int product = multiply(num1,num2);
 
         // Displaying the multiplication result
         System.out.println("Output: "+product);
