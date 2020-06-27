@@ -20,13 +20,25 @@ public class Demo {
         System.out.print("Enter second number: ");
         int num2 = scan.nextInt();
 
+        System.out.print("Enter choice: ");
+
+        int choice = scan.nextInt();
         // Closing Scanner after the use
         scan.close();
+       int result = 0;
+        switch(choice) {
+          case 1:
+          // Calculating product of two numbers
+            result = multiply(num1,num2);
+            break;
+          case 2:
+            // code block
+            break;
+          default:
+            // code block
+        }
 
-        // Calculating product of two numbers
-        int product = multiply(num1,num2);
-
-        // Displaying the multiplication result
-        System.out.println("Output: "+product);
+        // Displaying the result
+        System.out.println("Output: "+result);
     }
 }
